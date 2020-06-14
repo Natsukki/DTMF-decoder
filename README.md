@@ -1,2 +1,2 @@
 # Jenny
-DTMF decoder
+DTMF decoder written in python
