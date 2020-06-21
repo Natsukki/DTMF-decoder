@@ -1,6 +1,23 @@
 # DTMF decoder
 
 
+## Packages
+
+You have to install the required packages
+
+```
+
+pip -r install requirements.txt
+
+```
+
+If the previous command hangs on "Installing build depedencies" run this instead
+
+```
+
+python -m pip install scipy
+
+```
 
 ## Usage
 
