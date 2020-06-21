@@ -51,13 +51,17 @@ $ python decoder.py jenny.wav
 
 This script is very simple. It works as follows -
 
-1- We read the .wav file in wave format.\n
-2- Split the signal into frames and process the frames one by one.\n
+1- We read the .wav file in wave format.
+
+2- Split the signal into frames and process the frames one by one.
+
 3- Apply Goertzel Filter on each frame then post-test the out for valid signals. And store the valid charaters found and the time
-   in a dictionary. repeat the process for each frame.\n
+   in a dictionary. repeat the process for each frame.
+   
 4- Now we do clean up processing ( This takes the number of characters found and such and figures out what's a distinct key press.
    So say you pressed 8,5,2,1,1. The algorithm sees 8888852222221111111111111 . Cleaning up gives you 8,5,2,1,1)
-5 - Now the task is done.\n
+   
+5 - Now the task is done. 
 
 
 
