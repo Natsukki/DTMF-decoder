@@ -20,8 +20,6 @@ python -m pip install scipy
 You have to give a wav file.
 
 ```
-
-
 Usage : python decoder.py [-h] filename.wav
 
 optional arguments:
