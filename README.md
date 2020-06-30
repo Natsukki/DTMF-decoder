@@ -61,6 +61,11 @@ This script is very simple. It works as follows -
 - Print the string on the output
 
 
+## Limits
+
+- The script does not handle long numeric sequences well due to the step parameter
+
+## References
 
 DTMF keypad frequencies from Wikipedia:
 
