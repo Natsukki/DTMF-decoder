@@ -26,9 +26,6 @@ Usage : python decoder.py [-h] [-d] [-f]  filename.wav
 
 optional arguments:
   -h, --help     show this help message and exit
-  -d, --debug    show graphs to debug
-  -f freq        sampling frequency  (in hertz, 8000 by default)
-  
 ```
 
 ## Example
@@ -55,13 +52,15 @@ This script is very simple. It works as follows -
 
 2- Split the signal into frames and process the frames one by one.
 
-3- Apply Goertzel Filter on each frame then post-test the out for valid signals. And store the valid charaters found and the time
-   in a dictionary. repeat the process for each frame.
-   
-4- Now we do clean up processing ( This takes the number of characters found and such and figures out what's a distinct key press.
-   So say you pressed 8,5,2,1,1. The algorithm sees 8888852222221111111111111 . Cleaning up gives you 8,5,2,1,1)
-   
-5 - Now the task is done. 
+3- Apply the Fast Fourier Transform algorithm (cf. [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform))
+
+4- For each frame we find the high/low frequencies with the biggest range
+
+5- From that we compare the high/low frequencies with the DTMF's frequency table
+
+6- Add the found frequency to a string while making sure we're not repeating a character that has already been read
+
+7- Print the string on the output
 
 
 
