@@ -64,5 +64,5 @@ This script is very simple. It works as follows -
 
 DTMF keypad frequencies from Wikipedia:
 
-![array of dial tones' frequencies from Wikipedia](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling)
+[array of dial tones' frequencies from Wikipedia](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling)
 
