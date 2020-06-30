@@ -22,7 +22,7 @@ You have to give a wav file.
 ```
 
 
-Usage : python decoder.py [-h] [-d] [-f]  filename.wav
+Usage : python decoder.py [-h] filename.wav
 
 optional arguments:
   -h, --help     show this help message and exit
