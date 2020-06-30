@@ -67,7 +67,7 @@ This script is very simple. It works as follows -
 
 ## References
 
-DTMF keypad frequencies from Wikipedia:
+- [DTMF keypad frequencies from Wikipedia](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling)
 
-[array of dial tones' frequencies from Wikipedia](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling)
+- [Discrete Fourier Transform](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.111.4465&rep=rep1&type=pdf)
 
