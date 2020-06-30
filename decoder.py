@@ -79,7 +79,7 @@ class DTMFdetector(object):
             signal = self.data[i:i+self.step]
 
             fourier = np.fft.fft(signal)
-            frequencies = np.fft.fftfreq(signal.size, d=(1/self.sample_rate))
+            frequencies = np.fft.fftfreq(signal.size, d=(1 / self.sample_rate))
 
             low_freq = self.match(fourier, frequencies, 0, 1041, [697, 770, 852, 941])
             high_freq = self.match(fourier, frequencies, 1100, 1700, [1209, 1336, 1477, 1633])
