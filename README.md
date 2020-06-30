@@ -46,19 +46,19 @@ $ python decoder.py jenny.wav
 
 This script is very simple. It works as follows -
 
-1- We read the .wav file in wave format.
+- We read the .wav file in wave format.
 
-2- Split the signal into frames and process the frames one by one.
+- Split the signal into frames and process the frames one by one.
 
-3- Apply the Fast Fourier Transform algorithm (cf. [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform))
+- Apply the Fast Fourier Transform algorithm (cf. [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform))
 
-4- For each frame we find the high/low frequencies with the biggest range
+- For each frame we find the high/low frequencies with the biggest range
 
-5- From that we compare the high/low frequencies with the DTMF's frequency table
+- From that we compare the high/low frequencies with the DTMF's frequency table
 
-6- Add the found frequency to a string while making sure we're not repeating a character that has already been read
+- Add the found frequency to a string while making sure we're not repeating a character that has already been read
 
-7- Print the string on the output
+- Print the string on the output
 
 
 
